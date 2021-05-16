@@ -53,9 +53,13 @@ int main()
 {
 	int n = 9;
 	float* p = (float*)&n;
+	printf("%d\n", n);
+	printf("%f\n", *p);
 	printf("%d\n", n);//9
 	printf("%f\n", *p);//0.00000
 	*p = 9.0;
+	printf("%d\n", n);
+	printf("%f\n", *p);
 	printf("%d\n", n);//
 	printf("%f\n", *p);//9.00000
 	return 0;
